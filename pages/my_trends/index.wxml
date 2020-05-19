@@ -1,0 +1,25 @@
+<!-- 答疑社区模板 -->
+
+<block wx:for="{{community}}">
+    <template is="community_item" data="{{...item}}"></template>
+</block>
+
+
+<template name="community_item">
+    <view class="item_wrap"
+    >
+        <mp-cell link hover url="{{url}}">
+            <view class="item_title">{{title}}</view>
+            <view class="item_name">
+                <image class="head_img" src="{{head_img}}"></image>
+                <text>{{nick_name}}</text>
+            </view>
+            <text class="item_content">{{content}}</text>
+            
+        </mp-cell>
+        <view class="item_footer" bind:tap="handleDelete" data-cid="{{cid}}">
+            {{time}}
+            <mp-icon icon="delete" color="var(--themeColor)" size="{{15}}"></mp-icon>
+        </view>
+    </view>
+</template>

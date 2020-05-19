@@ -1,0 +1,115 @@
+.header_wrap {
+  box-shadow: 2px 2px 5px #dedede;
+  padding: 20rpx;
+  margin: 30rpx;
+  border-bottom: 1rpx solid #dedede;
+}
+.header_wrap .item_img {
+  margin-right: 16px;
+  width: 200rpx !important;
+  height: 200rpx !important;
+}
+.header_wrap .item_title {
+  font-weight: 800;
+  flex: 1;
+  font-size: 40rpx;
+}
+.header_wrap .item_name {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.header_wrap .item_name .head_img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header_wrap .item_name text {
+  margin-left: 25rpx;
+}
+.header_wrap .item_content {
+  flex: 3;
+}
+.header_wrap .item_footer {
+  flex: 1;
+  text-align: end;
+  color: gray;
+  font-size: 10px;
+}
+.comment_wrap {
+  margin: 20rpx;
+  width: 100%;
+}
+.comment_wrap .comment_title {
+  color: var(--themeColor);
+  border-bottom: 2rpx solid var(--themeColor);
+}
+.comment_wrap .comment_item {
+  box-shadow: 2px 2px 5px #dedede;
+  padding: 20rpx;
+  margin: 20rpx;
+}
+.comment_wrap .comment_item .item_img {
+  margin-right: 16px;
+  width: 200rpx !important;
+  height: 200rpx !important;
+}
+.comment_wrap .comment_item .item_title {
+  flex: 1;
+  font-size: 60rpx;
+}
+.comment_wrap .comment_item .item_name {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.comment_wrap .comment_item .item_name .head_img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.comment_wrap .comment_item .item_name text {
+  margin-left: 25rpx;
+}
+.comment_wrap .comment_item .item_content {
+  flex: 3;
+}
+.comment_wrap .comment_item .item_footer {
+  flex: 1;
+  text-align: end;
+  color: gray;
+  font-size: 10px;
+}
+.reply_wrap {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  padding-bottom: 10rpx;
+}
+.reply_wrap .input_boder {
+  border: solid 1px var(--themeColor);
+  margin: 20rpx 10rpx;
+  border-radius: 50rpx;
+  height: 60rpx;
+  flex: 4;
+  background-color: #fff;
+}
+.reply_wrap .input_boder input {
+  height: 100%;
+  margin-left: 25rpx;
+}
+.reply_wrap .reply_btn {
+  margin: 20rpx 10rpx;
+  box-sizing: border-box;
+  border-radius: 50rpx;
+  border: 1rpx white solid;
+  color: white;
+  height: 60rpx;
+  flex: 1;
+  text-align: center;
+  background-color: var(--themeColor);
+}

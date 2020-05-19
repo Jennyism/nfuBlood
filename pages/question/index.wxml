@@ -1,0 +1,15 @@
+<SearchInput></SearchInput>
+
+<view class="q_wrap">
+  <view class="q_item"
+  wx:for="{{question}}"
+  wx:key="index"
+  >
+  <view class="q_title">
+    {{item.index}}.{{item.title}}
+  </view>
+  <text decode="{{true}}" class="q_answer">
+    {{item.answer}}
+  </text>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="title_wrap">
+    <view class="left_head">
+        <image src="{{userInfo.avatarUrl}}" mode="widthFix" >
+        </image>
+    </view>
+    <view class="right_wrap">
+        <view class="nickname_text">{{userInfo.nickName}}</view>
+        <view class="id_text">{{userInfo.city}}</view>
+        <view class="flag">
+            <view class="flag_icon">
+                <image src="../../image/flag.png" mode="widthFix" >
+                    
+                </image>
+            </view>
+            <view class="flag_text">志愿者</view>
+        </view>
+    </view>
+</view>
+
+<button type="warn" plain="{{true}}" style="margin-top:30rpx;" bind:tap="loginoutHandle">
+    退出登录
+</button>

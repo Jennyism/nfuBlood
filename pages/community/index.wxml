@@ -1,0 +1,41 @@
+<SearchInput></SearchInput>
+<navigator class="post" url="/pages/community_create/index" >
+    <mp-icon icon="add" type="field" color="white" size="{{30}}"></mp-icon>
+</navigator>
+
+<view class="top">
+    <mp-cells title="常见问题">
+        <navigator class="question_all" url="/pages/question/index" >
+            <view class="question_wrap">
+                <view class="question_item"
+                    wx:for="{{question}}"
+                    wx:key="id"
+                >
+                    <navigator class="item_content" url="{{item.question_url}}" >
+                        {{index+1}}.{{item.text}}
+                    </navigator>
+                </view>
+            </view>
+            <mp-icon icon="arrow" color="gray" size="{{15}}"></mp-icon>
+        </navigator>
+    </mp-cells>
+</view>
+<block wx:for="{{community}}">
+    <template is="community_item" data="{{...item}}"></template>
+</block>
+<!-- 答疑社区模板 -->
+<template name="community_item">
+    <navigator class="item_wrap"
+    url="{{url}}"
+    >
+        <mp-cell link hover url="{{url}}">
+            <view class="item_title">{{title}}</view>
+            <view class="item_name">
+                <image class="head_img" src="{{head_img}}"></image>
+                <text>{{nick_name}}</text>
+            </view>
+            <text class="item_content">{{content}}</text>
+            <view class="item_footer">{{time}}</view>
+        </mp-cell>
+    </navigator>
+</template>

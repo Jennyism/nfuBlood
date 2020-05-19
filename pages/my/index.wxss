@@ -1,0 +1,57 @@
+.title_wrap {
+  border-bottom: 1rpx solid #dedede;
+  padding: 80rpx;
+  height: 200rpx;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.title_wrap .left_head {
+  width: 200rpx;
+  height: 200rpx;
+}
+.title_wrap .left_head image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.title_wrap .right_wrap {
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.title_wrap .right_wrap .nickname_text {
+  color: var(--themeColor);
+  flex: 2;
+  font-size: 50rpx;
+}
+.title_wrap .right_wrap .id_text {
+  font-size: 40rpx;
+  flex: 1;
+}
+.title_wrap .right_wrap .flag {
+  flex: 1;
+  display: inline-flex;
+}
+.title_wrap .right_wrap .flag .flag_icon {
+  margin-right: 5rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.title_wrap .right_wrap .flag .flag_icon image {
+  width: 100%;
+  height: 100%;
+}
+.login_wrap {
+  margin-top: 50rpx;
+  text-align: center;
+  font-weight: 500;
+}
+.login_wrap .text {
+  line-height: 20rpx;
+  letter-spacing: 10rpx;
+}
+.login_wrap button {
+  margin-top: 20rpx;
+  background-color: var(--themeColor) !important;
+}

@@ -1,0 +1,23 @@
+.create_wrap {
+  margin: 20rpx;
+}
+.create_wrap .title {
+  border-bottom: 2rpx solid #dedede;
+}
+.create_wrap .title input {
+  padding: 10rpx;
+}
+.create_wrap .content {
+  margin-top: 10rpx;
+  border-bottom: 2rpx solid #dedede;
+}
+.create_wrap .content textarea {
+  padding: 10rpx;
+}
+.create_wrap button {
+  background-color: var(--themeColor) !important;
+  color: #fff !important;
+  border-color: var(--themeColor) !important;
+  margin-top: 30rpx;
+  box-shadow: 5px 5px 10px #ccc;
+}

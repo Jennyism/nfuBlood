@@ -1,0 +1,97 @@
+.post{
+    z-index: 9;
+    position: fixed;
+    top: 85%;
+    right: 10%;
+    background-color:  var(--themeColor);
+    border: var(--themeColor) solid 2px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #ccc;
+}
+.post:hover{
+    opacity: 0.8;
+}
+
+.top{
+    margin: 0 30rpx;
+
+    box-shadow: 5px 5px 10px #ccc;
+
+    background-color: #fff;
+    padding-top: 20rpx;
+    margin-bottom: 20rpx;
+    .question_all{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50rpx;
+        .question_wrap{
+            width: 100%;
+            flex: 9;
+            display: flex;
+            flex-wrap: wrap;
+            .question_item{
+                flex: 1;
+                height: 80rpx;
+                width: 100%;
+                .item_content{
+                    font-size: 35rpx;
+                    width: 90%;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+//帖子样式
+.item_wrap{
+    margin: 0 30rpx;
+    box-shadow: 5px 5px 10px #ccc;
+
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    mp-cell{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .item_img{
+        margin-right: 16px;
+        width:200rpx !important;
+        height: 200rpx !important;
+        }
+        .item_title{
+            font-weight: 1000;
+        flex: 1;
+        font-size: 40rpx;
+        }
+        .item_name{
+        flex: 1;
+        display: flex;
+        //中间对齐
+        align-items: center;
+        .head_img{
+            width: 80rpx;
+            height: 80rpx;
+            overflow: hidden;
+        }
+        text{
+            margin-left: 25rpx;
+        }
+        }
+
+        .item_content{
+        flex: 3;
+        }
+
+        .item_footer{
+        flex: 1;
+        font-size: 10px;
+        text-align: end;
+        color: gray;
+        }
+    }
+}

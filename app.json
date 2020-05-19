@@ -1,0 +1,65 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/guide/index",
+    "pages/search/index",
+    "pages/history/index",
+    "pages/lost_found/index",
+    "pages/community/index",
+    "pages/community_detail/index",
+    "pages/community_create/index",
+    "pages/line_up/index",
+    "pages/gift/index",
+    "pages/my/index",
+    "pages/question/index",
+    "pages/my_exit/index",
+    "pages/my_trends/index",
+    "pages/my_notes/index",
+    "pages/warn_detail/index"
+  ],
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/tab/tab_index.png",
+        "selectedIconPath": "image/tab/tab_index_active.png"
+      },
+      {
+        "pagePath": "pages/guide/index",
+        "text": "指南",
+        "iconPath": "image/tab/tab_guide.png",
+        "selectedIconPath": "image/tab/tab_guide_active.png"
+      },
+      {
+        "pagePath": "pages/line_up/index",
+        "text": "排队",
+        "iconPath": "image/tab/tab_lineup.png",
+        "selectedIconPath": "image/tab/tab_lineup_active.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "image/tab/tab_my.png",
+        "selectedIconPath": "image/tab/tab_my_active.png"
+      }
+    ]
+  },
+  
+  "useExtendedLib": {
+    "weui": true
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "献血小助手",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,65 @@
+.index_swiper {
+  box-shadow: 5px 5px 10px #ccc;
+}
+.index_swiper swiper {
+  width: 750rpx;
+  height: 400rpx;
+}
+.index_swiper swiper image {
+  width: 100%;
+}
+.index_cate {
+  box-shadow: 5px 5px 10px #ccc;
+  margin-top: 40rpx;
+  background-color: #fff;
+  display: flex;
+}
+.index_cate navigator {
+  padding: 50rpx 30rpx;
+  flex: 1;
+  text-align: center;
+}
+.index_cate navigator image {
+  width: 80%;
+}
+.index_cate navigator text {
+  font-size: 25rpx;
+  color: #000;
+}
+.image_wrap {
+  box-shadow: 5px 5px 10px #ccc;
+  height: 400rpx;
+  margin: 40rpx 0;
+  position: relative;
+}
+.image_wrap .control_item_left {
+  transform: rotateY(60deg);
+  top: 0;
+  left: 10rpx;
+  font-weight: 1000;
+  text-shadow: 5px 5px 10px #666;
+  color: #fff;
+}
+.image_wrap .control_item_right {
+  top: 0;
+  right: 10rpx;
+  transform: rotateY(60deg);
+  font-weight: 1000;
+  text-shadow: 5px 5px 10px #666;
+  color: #fff;
+}
+.image_wrap text {
+  position: absolute;
+  top: 40rpx;
+  z-index: 9;
+  font-size: 80rpx;
+  color: #fff;
+}
+.image_wrap .image_swiper swiper {
+  width: 750rpx;
+  height: 400rpx;
+  position: absolute;
+}
+.image_wrap .image_swiper swiper image {
+  width: 100%;
+}

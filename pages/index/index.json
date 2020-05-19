@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "mp-icon": "../../components/icon/icon"
+  },
+  "navigationBarTitleText": "首页"
+}

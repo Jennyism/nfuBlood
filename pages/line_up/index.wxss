@@ -1,0 +1,124 @@
+.offer_number_wrap {
+  margin: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offer_number_wrap .number_btn {
+  line-height: 200rpx;
+  text-align: center;
+  border: 5rpx solid #5DB65A;
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
+  color: #5DB65A;
+  font-size: 40rpx;
+}
+.offer_number_wrap .number_tips {
+  width: 100%;
+  box-shadow: 5px 5px 10px #ccc;
+  margin-top: 10rpx;
+  text-align: center;
+}
+.offer_number_wrap .number_tips .tips_item {
+  margin-bottom: 30rpx;
+  padding: 30rpx;
+}
+.offer_number_wrap .number_tips .tips_item .item_header {
+  font-weight: 800;
+}
+.offer_number_wrap .tips_ps {
+  margin-top: 20rpx;
+  color: gray;
+  text-align: center;
+}
+.lineup_wrap {
+  margin: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lineup_wrap .lineup_num {
+  line-height: 200rpx;
+  text-align: center;
+  background-color: #5DB65A;
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
+  color: white;
+  font-size: 60rpx;
+  font-weight: 800;
+}
+.lineup_wrap .lineup_status {
+  box-shadow: 5px 5px 10px #ccc;
+  width: 90%;
+  margin-bottom: 30rpx;
+  padding: 50rpx;
+}
+.lineup_wrap .lineup_status .title {
+  margin-bottom: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.lineup_wrap .lineup_status .title .title_left {
+  font-size: 40rpx;
+  line-height: 100%;
+  font-weight: 800;
+}
+.lineup_wrap .lineup_status .title .title_right {
+  margin-left: 5px;
+  padding-left: 2px;
+  border-left: 1rpx solid gray;
+  line-height: 100%;
+  color: gray;
+  font-size: 20rpx;
+}
+.lineup_wrap .lineup_status .body {
+  margin-top: 20rpx;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lineup_wrap .lineup_status .body .status_num {
+  border-radius: 25%;
+  font-weight: 400;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  line-height: 80rpx;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 10rpx;
+}
+.lineup_wrap .lineup_status .body .active {
+  background-color: #5DB65A;
+}
+.lineup_wrap .lineup_footer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.lineup_wrap .lineup_footer .footer_right {
+  align-self: flex-end;
+  color: gray;
+  font-size: 25rpx;
+}
+.lineup_wrap .lineup_footer .line_up_btn {
+  background-color: gray;
+  color: #fff;
+  align-self: center;
+  font-size: 25rpx;
+  padding: 20rpx;
+  border-radius: 40rpx;
+}
+.tips {
+  text-align: center;
+  margin: 5px 0;
+  color: #8e8e8e;
+  font-size: 10px;
+}

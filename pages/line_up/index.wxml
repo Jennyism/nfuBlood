@@ -1,0 +1,76 @@
+<block wx:if="{{isLineUp}}">
+    <view class="lineup_wrap">
+        <view class="lineup_num">
+            26
+        </view>
+        <view class="tips">
+            取消排队请点击底部按钮
+        </view>
+        <view class="lineup_status">
+            <view class="title">
+                <text class="title_left">
+                    献血阶段
+                </text>
+                <text class="title_right">
+                    采血区
+                </text>
+            </view>
+            <view class="body">
+                前面还有
+                <view class="status_num  active">9</view>
+                个批次
+            </view>
+
+            
+        </view>
+        <view class="lineup_status">
+            <view class="title">
+                <text class="title_left">
+                    领证阶段
+                </text>
+                <text class="title_right">
+                    领证区
+                </text>
+            </view>
+            <view class="body">
+                前面还有
+                <view class="status_num">17</view>
+                个批次
+            </view>
+        </view>
+        <view class="lineup_footer">
+            <view class="footer_right">
+                每批次10人
+            </view>
+            <view class="line_up_btn" bindtap="handleCancal">取消排队</view>
+        </view>
+    </view>
+</block>
+<block wx:else>
+    <view class="offer_number_wrap">
+        <view class="number_btn" bindtap="handleLinpUp">
+            取号
+        </view>
+        <text class="tips" >
+            排队请点击按钮
+        </text>
+        <view class="number_tips">
+            <view class="tips_item">
+                <text class="item_header">阶段一：</text>
+                <text class="item_footer">填表、测血压血型</text>
+            </view>
+            <view class="tips_item">
+                <text class="item_header">阶段二：</text>
+                <text class="item_footer">采血区，献血</text>
+            </view>
+            <view class="tips_item">
+                <text class="item_header">阶段三：</text>
+                <text class="item_footer">领证区，领证、礼品</text>
+            </view>
+        </view>
+        <text class="tips_ps" decode="{{true}}">
+            目前9批次等待献血，17批次等待领证
+            PS: 排队模式为分批次，每批次10人
+        </text>
+    </view>
+</block>

@@ -1,0 +1,13 @@
+.q_wrap .q_item {
+  padding: 50rpx;
+  box-shadow: 5px 5px 10px #ccc;
+  margin-bottom: 30rpx;
+}
+.q_wrap .q_item .q_title {
+  color: var(--themeColor);
+  font-size: large;
+}
+.q_wrap .q_item .q_answer {
+  width: 100%;
+  word-wrap: break-word;
+}

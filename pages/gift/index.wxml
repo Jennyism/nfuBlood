@@ -1,0 +1,12 @@
+<view class="main_wrap">
+    <block wx:for="{{gift}}">
+        <mp-cells footer="每3小时更新一次">
+            <mp-cell hover>
+                <image class="item_img" slot="icon" src="{{item.img}}"></image>
+                <view class="item_title">{{item.title}}</view>
+                <text class="item_content">{{item.content}}</text>
+                <view class="item_footer">余量：{{item.sum}}</view>
+            </mp-cell>
+        </mp-cells>
+    </block>
+</view>

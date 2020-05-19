@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "mp-icon": "../components/icon/icon",
+    "mp-cells": "../components/cells/cells",
+    "mp-cell": "../components/cell/cell",
+    "SearchInput":"../../components/SearchInput/SearchInput"
+  },
+  "navigationBarTitleText": "答疑社区"
+}

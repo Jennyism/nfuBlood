@@ -1,0 +1,69 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+
+    <block wx:if="{{tabs[0].isActive}}">
+        <!-- 第一个页面 -->
+        <view class="big_panel">
+            <text>
+                时间：{{big_panel.time}}\n
+                地点：{{big_panel.place}}\n
+            </text>
+           <text style="color:red;">注意：{{big_panel.warn}}</text>
+        </view>
+
+        <view class="warn_wrap"
+         wx:for="{{warn}}"
+         wx:key="type"
+        >
+            <navigator class="warn_item" url="/pages/warn_detail/index?type={{item.type}}">
+                <mp-cell link hover value="{{item.title}}">
+                </mp-cell>
+            </navigator>
+        </view>
+    </block>
+    <!-- **************************分隔1-2****************************** -->
+    <block wx:if="{{tabs[1].isActive}}">
+        <!-- 第二个页面 -->
+        <view class="process_wrap">
+            <view class="process_item"
+                wx:for="{{process}}"
+                wx:key="title"
+            >
+                <view class='item_circle'></view>
+                <view class='item_line'>
+                    <view class="item_line_content">
+                        <view class="content_left">
+                            <view class="process_item_top">
+                                {{item.title}}
+                            </view>
+                            <text class="process_item_disc">
+                                {{item.disc}}
+                            </text>
+                        </view>
+                        <image src="{{item.image_url}}" class="process_item_right" mode="widthFix">
+                            
+                        </image>
+                    </view>       
+            </view>
+            </view>
+        </view>
+    </block>
+    <!-- **************************分隔2-3****************************** -->
+    <block wx:if="{{tabs[2].isActive}}">
+        <!-- 第三个页面 -->
+        <view class="map_wrap">
+            <view class="map_item">
+                <image bindtap="previewImage" data-index="2" class="map_item_image" mode="widthFix" src="../../image/map2.jpg"></image>
+                <view class="map_item_title">
+                    医务室二楼
+                </view>
+            </view>
+
+            <view class="map_item">
+                <image bindtap="previewImage" data-index="1" class="map_item_image" mode="widthFix" src="../../image/map1.jpg"></image>
+                <view class="map_item_title">
+                    医务室一楼
+                </view>
+            </view>
+        </view>
+    </block>
+</Tabs>

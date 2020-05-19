@@ -1,0 +1,13 @@
+<view class="create_wrap">
+    <form class="create_form" bindsubmit="handlesubmit">
+    <view class="title">
+        <input type="text" placeholder="请输入标题" maxlength="30" name="title" />
+    </view>
+    <view class="content">
+        <textarea placeholder="请输入内容" maxlength="140" name="content"/>
+    </view>
+    <view class="submit">
+        <button form-type="submit" type="primary" plain="{{true}}">发布</button>
+    </view>
+</form>
+</view>

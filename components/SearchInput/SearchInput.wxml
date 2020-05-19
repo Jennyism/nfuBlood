@@ -1,0 +1,6 @@
+<view class="search_input">
+    <navigator url="/pages/search/index" open-type="navigate">
+        <mp-icon icon="search" color="#838383" size="{{25}}"></mp-icon>
+    </navigator>
+    
+</view>

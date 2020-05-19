@@ -1,0 +1,34 @@
+/* components/Tabs/Tabs.wxss */
+.tabs{
+}
+.tabs_title{
+    background-color: #fff;
+    display: flex;
+    /* border-bottom: 2rpx solid #ccc; */
+}
+
+.title_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #ccc;
+    padding: 15rpx 0;
+}
+
+.title_item > text{
+    font-size: 30rpx;
+    padding-bottom: 10rpx;
+}
+.active{
+    color: var(--themeColor);
+}
+
+.active > text{
+    border-bottom: 5rpx solid var(--themeColor);
+    font-weight: 800;
+}
+
+.tabs_content{
+    margin-top: 10rpx;
+}

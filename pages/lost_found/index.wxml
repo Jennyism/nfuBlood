@@ -1,0 +1,13 @@
+<view class="main_wrap">
+    <mp-cells footer="3分钟前发布"
+        wx:for="{{losts}}"
+    >
+        <mp-cell hover>
+            <image class="item_img" slot="icon" src="{{item.image}}"></image>
+            <view class="item_title">{{item.title}}</view>
+            <text class="item_content">地点：{{item.place}}
+                            请失主在7:30-23:00及时领取
+            </text>
+        </mp-cell>
+    </mp-cells>
+</view>

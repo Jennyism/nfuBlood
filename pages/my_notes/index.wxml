@@ -1,0 +1,3 @@
+<block wx:for="{{notes}}">
+    <mp-cell value="{{item.date}}" footer="{{item.size}}"></mp-cell>
+</block>

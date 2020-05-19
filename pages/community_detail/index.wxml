@@ -1,0 +1,33 @@
+<view class="header_wrap">
+    <view class="item_title">{{invitation.title}}</view>
+    <view class="item_name">
+        <image class="head_img" src="{{invitation.head_img}}"></image>
+        <text>{{invitation.nick_name}}</text>
+    </view>
+    <text class="item_content">{{invitation.content}}</text>
+    <view class="item_footer">{{invitation.time}}</view>
+</view>
+
+<view class="comment_wrap">
+    <view class="comment_title">
+        评论区
+    </view>
+    <view class="comment_item"
+    wx:for="{{comment}}"
+    >
+        <view class="item_name">
+            <image class="head_img" src="{{item.head_img}}"></image>
+            <text>{{item.nick_name}}</text>
+        </view>
+        <text class="item_content">{{item.content}}</text>
+        <view class="item_footer">{{item.time}}</view>
+    </view>
+</view>
+
+<view class="reply_wrap">
+    <view class="input_boder">
+        <input type="text" placeholder="在此回复" />
+    </view>
+    <view class="reply_btn" type="default" >回复</view>
+</view>
+

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-icon": "../components/icon/icon",
+    "mp-cells": "../components/cells/cells",
+    "mp-cell": "../components/cell/cell"
+  },
+  "navigationBarTitleText": "我的动态"
+}

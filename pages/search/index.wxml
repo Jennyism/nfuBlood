@@ -1,0 +1,117 @@
+<view class="search_row">
+    <mp-icon class="search_icon" icon="search" color="#838383" size="{{20}}"></mp-icon>
+    <input value="{{inpVal}}" placeholder="请输入您要搜索的信息" bindinput="handleInput"></input>
+    <view class="cancal_btn_wrap" hidden="{{!isFocus}}">
+        <mp-icon icon="close2" class="close_icon" type="field" color="#838383" size="{{18}}"  bindtap="handleCancel"></mp-icon>
+    </view>
+</view>
+
+<view class="search_content">
+    <block wx:if="{{!isFocus}}">
+        <!-- 未搜索 -->
+        <view class="history_wrap">
+            <template is="result_panel" data="{{...history}}"></template>
+        </view>
+
+        <view class="question_wrap">
+            <template is="result_panel" data="{{...question}}"></template>
+        </view>
+    </block>
+    <block wx:else>
+        <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+
+            <block wx:if="{{tabs[0].isActive}}">
+                <!-- 第一个页面 -->
+                <view class="all_wrap">
+                    <view class="all_item">
+                        <block wx:for="{{all}}">
+                            <template is="{{item.type}}" data="{{...item}}"></template>
+                        </block>
+                    </view>
+                </view>
+                
+            </block>
+            <!-- **************************分隔1-2****************************** -->
+            <block wx:if="{{tabs[1].isActive}}">
+                <!-- 第二个页面 -->
+                <block wx:for="{{community}}">
+                    <template is="community_item" data="{{...item}}"></template>
+                </block>
+            </block>
+            <!-- **************************分隔2-3****************************** -->
+            <block wx:if="{{tabs[2].isActive}}">
+                <!-- 第三个页面 -->
+               <block wx:for="{{note}}">
+                    <template is="note_item" data="{{...item}}"></template>
+                </block>
+            </block>
+            <block wx:if="{{tabs[3].isActive}}">
+                <!-- 第四个页面 -->
+               <block wx:for="{{gift}}">
+                    <template is="gift_item" data="{{...item}}"></template>
+                </block>
+            </block>
+        </Tabs>
+    </block>
+</view>
+
+<template name="result_panel">
+    <view class="result_wrap">
+        <view class="result_title">
+            {{title}}
+        </view>
+        <view class="result_data_content">
+            <navigator class="result_data_item"
+                wx:for="{{list}}"
+                wx:for-item="item"
+                wx:for-index="index"
+            >
+                {{index+1}}.{{item}}
+            </navigator>
+        </view>
+    </view>
+</template>
+
+<!-- 答疑社区模板 -->
+<template name="community_item">
+    <navigator class="item_wrap"
+    url="{{url}}"
+    >
+        <mp-cell link hover url="{{url}}">
+            <view class="item_title">{{title}}</view>
+            <view class="item_name">
+                <image class="head_img" src="{{head_img}}"></image>
+                <text>{{nick_name}}</text>
+            </view>
+            <text class="item_content">{{content}}</text>
+            <view class="item_footer">{{time}}</view>
+        </mp-cell>
+    </navigator>
+</template>
+
+<!-- 注意事项模板 -->
+<template name="note_item">
+    <navigator class="item_wrap"
+    url="{{url}}" 
+    >
+        <mp-cell link hover url="{{url}}">
+            <view class="item_title">{{title}}</view>
+            <text class="item_content">{{content}}</text>
+            <view class="item_footer">{{time}}</view>
+        </mp-cell>
+    </navigator>
+</template>
+
+<!-- 礼品详情模板 -->
+<template name="gift_item">
+    <navigator class="item_wrap"
+    url="{{url}}"
+    >
+        <mp-cell link hover url="{{url}}">
+            <image class="item_img" slot="icon" src="{{img}}"></image>
+            <view class="item_title">{{title}}</view>
+            <text class="item_content">{{content}}</text>
+            <view class="item_footer">{{time}}</view>
+        </mp-cell>
+    </navigator>
+</template>

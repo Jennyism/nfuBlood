@@ -1,0 +1,62 @@
+<!-- 搜索栏开始 -->
+<SearchInput></SearchInput>
+<!-- 搜索栏结束 -->
+
+<!-- 轮播开始 -->
+<view class="index_swiper">
+    <swiper autoplay indicator-dots circular 
+    indicator-active-color="#878787"
+    indicator-color="#bbbbbb">
+        <swiper-item
+        wx:for="{{swiperList}}"
+        wx:key="goods_id"
+        >
+            <navigator url="{{item.navigator_url}}" >
+                <image src="{{item.image_src}}" mode="widthFix"></image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+</view>
+<!-- 轮播结束 -->
+
+<!-- 金刚区开始 -->
+<view class="index_cate">
+    <navigator
+    wx:for="{{catesList}}"
+    wx:key="name"
+    url="{{item.navigator_url}}"
+    >
+        <image class="" src="{{item.image_src}}" mode="widthFix">
+            
+        </image>
+        <text>
+            {{item.text}}
+        </text>
+    </navigator>
+</view>
+<!-- 金刚区结束 -->
+
+<!-- 回顾照片 -->
+<view class="image_wrap">
+    <text decode="{{true}}" class="control_item_left">
+        &lt;
+        <!-- <mp-icon icon="back" color="black" size="{{25}}"></mp-icon> -->
+    </text>
+    <view class="image_swiper">
+        <swiper autoplay circular>
+            <swiper-item
+            wx:for="{{reviewList}}"
+            >
+                <navigator url="" >
+                    <image src="{{item}}" mode="widthFix"></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <text decode="{{true}}" class="control_item_right">
+        &gt;
+        <!-- <mp-icon icon="arrow" color="black" size="{{25}}"></mp-icon> -->
+    </text>
+</view>
+<!-- 回顾照片 -->
+
