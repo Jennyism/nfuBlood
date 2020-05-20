@@ -2,20 +2,23 @@
   margin-top: 10rpx;
 }
 .big_panel {
-  margin: 0 10rpx;
+  margin: 10rpx 10rpx;
   box-shadow: 5px 5px 10px #ccc;
   background-color: #fff;
-  padding: 50rpx 0;
+  padding: 50rpx 60rpx;
   display: flex;
   flex-direction: column;
 }
-.big_panel text {
-  text-align: center;
+.big_panel .prim_text {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.big_panel .bottom_text {
+  color: gray;
 }
 .warn_wrap {
-  margin: 0 10rpx;
+  margin: 10rpx 10rpx;
   box-shadow: 5px 5px 10px #ccc;
-  margin-top: 10rpx;
 }
 .warn_wrap .warn_item {
   font-size: 35rpx;

@@ -3,6 +3,19 @@ Page({
   data: {
 
   },
+  onLoad:function(){
+    if(!wx.getStorageSync('userInfo')){
+      wx.showModal({
+        title:"您还没有登录",
+        content:"请到[我的]进行登录操作！",
+        complete(){
+          wx.switchTab({
+            url: '/pages/my/index',
+          })
+        }
+      })
+    }
+  },
   handlesubmit(e){
     const data = e.detail.value;
     let flag = true;
@@ -25,7 +38,7 @@ Page({
               title: '发帖成功！',
               success(){
                 wx.navigateTo({
-                  url: '/pages/community/index',
+                  url: '/pages/community/index?title='+data.title+"&content="+data.content,
                 });
               }
             })

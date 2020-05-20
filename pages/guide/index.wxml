@@ -3,11 +3,11 @@
     <block wx:if="{{tabs[0].isActive}}">
         <!-- 第一个页面 -->
         <view class="big_panel">
-            <text>
-                时间：{{big_panel.time}}\n
-                地点：{{big_panel.place}}\n
+            <text class="prim_text">时间 {{big_panel.time}}
+                地点 {{big_panel.place}}
             </text>
-           <text style="color:red;">注意：{{big_panel.warn}}</text>
+           <text class="bottom_text">{{big_panel.warn}}
+            </text>
         </view>
 
         <view class="warn_wrap"

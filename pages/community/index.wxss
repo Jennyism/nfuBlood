@@ -36,7 +36,7 @@
   width: 100%;
 }
 .top .question_all .question_wrap .question_item .item_content {
-  font-size: 35rpx;
+  font-size: 40rpx;
   width: 90%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -59,9 +59,10 @@
   height: 200rpx !important;
 }
 .item_wrap mp-cell .item_title {
-  font-weight: 1000;
+  font-weight: 800;
   flex: 1;
   font-size: 40rpx;
+  line-height: 2.5rem;
 }
 .item_wrap mp-cell .item_name {
   flex: 1;

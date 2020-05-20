@@ -29,11 +29,11 @@
     url="{{url}}"
     >
         <mp-cell link hover url="{{url}}">
-            <view class="item_title">{{title}}</view>
             <view class="item_name">
                 <image class="head_img" src="{{head_img}}"></image>
                 <text>{{nick_name}}</text>
             </view>
+            <view class="item_title">{{title}}</view>
             <text class="item_content">{{content}}</text>
             <view class="item_footer">{{time}}</view>
         </mp-cell>

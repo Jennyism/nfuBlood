@@ -1,3 +1,10 @@
-<block wx:for="{{notes}}">
-    <mp-cell value="{{item.date}}" footer="{{item.size}}"></mp-cell>
-</block>
+<mp-cells wx:for="{{notes}}">
+    <mp-cell>
+        <view>
+            {{item.date}}
+        </view>
+        <view slot="footer">
+            {{item.size}}
+        </view>
+    </mp-cell>
+</mp-cells>

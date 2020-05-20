@@ -49,5 +49,24 @@ Page({
         url:"/pages/community_detail/index?cid=3"
       }
     ]
+  },
+  onLoad:function(options){
+    if(JSON.stringify(options) !== '{}'){
+      let comm = this.data.community;
+      const userInfo = wx.getStorageSync('userInfo');
+      comm.unshift({
+        cid:4,
+        title:options.title,
+        head_img:userInfo.avatarUrl,
+        nick_name:userInfo.nickName,
+        content:options.content,
+        time:"2秒前",
+        url:"/pages/community_detail/index?cid=4"
+      }
+      );
+      this.setData({
+        community:comm
+      })
+    }
   }
 })
